@@ -13,8 +13,8 @@
 ### Требования
 
 - [ ] Внутри папки 02-write-file находится 1 файл **index.js**
-- [ ] При выполнении команды ```node 02-write-file``` в корневом каталоге репозитория в консоль выводится приглашение на ввод текста(На ваш выбор).
-- [ ] После ввода текста в каталоге ```02-write-file``` должен быть создан текстовый файл, а введённый текст записан в него. Процесс не завершается и ждёт нового ввода.
+- [ ] При выполнении команды ```node 02-write-file``` в папке  ```02-write-file``` создаётся текстовый файл, а в консоль выводится приглашение на ввод текста(На ваш выбор)
+- [ ] После ввода текста в каталоге ```02-write-file``` введённый текст должен быть записан в созданный ранее файл. Процесс не завершается и ждёт нового ввода.
 - [ ] После следующего ввода созданный изначально текстовый файл дополняется новым текстом, процесс продолжает ждать ввод.
 - [ ] При нажатии сочетания клавиш ```ctrl + c``` или вводе ```exit``` в консоль выводится прощальная фраза и процесс завершается.
 
@@ -48,16 +48,15 @@
     - [Сигнальные события (nodejsdev.ru)](https://nodejsdev.ru/api/process/#signal-events)
 - Readline:
     - [Readline](https://nodejs.org/api/readline.html)
-    - [Readline на русском (nodejsdev.ru)]()
+    - [Readline на русском (nodejsdev.ru)](https://nodejsdev.ru/api/readline/)
 - События:  
     - [События от Metanit](https://metanit.com/web/nodejs/2.9.php)
     - [Understanding Node.js Event-Driven Architecture (FreeCodeCamp)](https://www.freecodecamp.org/news/understanding-node-js-event-driven-architecture-223292fcbc2d/)
-    - [Event emitter (nodejsdev.ru)](https://nodejsdev/learn/the-node.js-event-emitter)  
+    - [Event emitter](https://nodejs.dev/learn/the-nodejs-event-emitter)  
     - [Перевод документации Events (nodejsdev.ru)](https://nodejsdev.ru/api/events/)  
     - [События гайд (nodejsdev.ru)](https://nodejsdev.ru/guide/events/) 
 - Потоки:
     - [Stream](https://nodejs.org/api/stream.html)  
-    - [Stream перевод на русский](https://js-node.ru/site/article?id=41)
     - [fs.createReadStream](https://nodejs.org/api/fs.html#fs_fs_createreadstream_path_options)
     - [Потоки (nodejsdev.ru)](https://nodejsdev.ru/api/stream/)
     - [Pipe (nodejsdev.ru)](https://nodejsdev.ru/guide/pipe/)
@@ -65,4 +64,4 @@
     - [Pipe от Metanit](https://metanit.com/web/nodejs/2.11.php)  
 - Модуль Path:
     - [Path](https://nodejs.org/api/path.html)   
-    - [Path перевод на русский](https://nodejs.org/api/path.html#path_path)
+    - [Path перевод на русский](https://nodejsdev.ru/api/path/)
