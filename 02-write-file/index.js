@@ -1,3 +1,30 @@
+const readline = require('readline')
+const rl = readline.createInterface({
+  input: process.stdin, 
+  output: process.stdout
+})
+
+const fs = require('fs')
+
+const writeTextFile = (answer) => {
+  fs.appendFile(__dirname + '/text.txt', answer, err => {
+    if (err) {
+      throw err
+    }
+  })
+}
+
+rl.question('Hello! Enter some text :', (answer) => {    
+  rl.on('line', line => {
+    if (line === 'exit') {
+      console.log('Good buy')
+      process.exit(0)
+    }
+  })
+  writeTextFile(answer)
+})
+
+
 // const {stdout, stdin} = process
 // const fs = require('fs')
 // const path = require('path')
@@ -25,19 +52,19 @@
 //     }
 // })
 
-const fs = require('fs')
-const process = require('process')
-// const { Stream } = require('stream')
+// const fs = require('fs')
+// const process = require('process')
+// // const { Stream } = require('stream')
 
-const content = 'Hello! Enter some  text: '
+// const content = 'Hello! Enter some  text: '
 
- function inputText() {
-     process.stdout.write(content)
- }
+//  function inputText() {
+//      process.stdout.write(content)
+//  }
 
- inputText()
+//  inputText()
 
-const exit = 'Good Buy for Now!'
+// const exit = 'Good Buy for Now!'
 
 // function goodBuy() {
 //     if(str === 'exit') {
@@ -48,6 +75,17 @@ const exit = 'Good Buy for Now!'
 
 // goodBuy()
 
+// const { stdin, stdout } = process;
+
+// //stdout.write('Как тебя зовут?\n');
+// stdin.on('data', function (content) {
+//       fs.appendFile(__dirname + '/text.txt', content, err => {
+//           if (err) {
+//             throw err
+//           }
+//         })
+//   })
+// process.on('exit', () => stdout.write('Удачи!'));
 
 // process.stdin.on('data', function (content) {
 //     fs.writeFile(__dirname + '/text.txt', content, err => {
