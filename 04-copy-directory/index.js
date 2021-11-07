@@ -1,25 +1,3 @@
-// const fs = require('fs');
-// const fsPromises = fs.promises;
-
-// fs.copyFile('./files', './copy-files', (err) => {
-//     if (err) throw err
-//     console.log('files was copied to files-copy')
-// });
-
-// (async () => {
-//     try {
-//       await fs.promises.mkdir('/files-copy', { recursive: true });
-//     } catch (error) {
-//       throw error;
-//     }
-//   })();
-  
-// fsPromises.mkdir('./files-copy', {recursive: true}).then(function() {
-//     console.log('Directory created successfully');
-// }).catch(function() {
-//     console.log('err.message');
-// });
-
 const { rm, mkdir, readdir, copyFile } = require('fs/promises');
 const { resolve: resolvePath, join: joinPath } = require('path');
 
